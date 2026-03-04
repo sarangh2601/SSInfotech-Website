@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tailwind Test</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/heroicons@2.0.18/dist/heroicons.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="w-full flex justify-between items-center px-[80px] py-[20px] bg-blue-100 sticky top-0 z-50">
+        <h2 class="text-3xl font-bold text-black-3 w-[50%]">SSInfoTech</h2>
+        <div class="flex justify-between items-center w-[50%]">
+            <div>
+                <ul class="flex gap-8 font-semibold">
+
+                    <li class="relative group">
+                        <a href="#" class="pb-1">Home</a>
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+
+                    <li class="relative group">
+                        <a href="#about" class="pb-1">About</a>
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+
+                    <li class="relative group">
+                        <a href="#service" class="pb-1">Services</a>
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+                    <li class="relative group">
+                        <a href="#industries" class="pb-1">Industries</a>
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+
+                    <li class="relative group">
+                        <a href="#contactus" class="pb-1">Contact Us</a>
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+
+                </ul>
+            </div>
+            <button onclick="openModal()"
+                class="bg-black text-white py-4 px-14  rounded-lg hover:bg-white hover:text-black hover:border-2 hover:border-solid hover:border-black sm:hidden">Get
+                Start</button>
+        </div>
+    </nav>
+
+    <section class="h-full w-full flex flex-col justify-center items-center mt-10 mb-10" id="home">
+        <div
+            class="w-[80%] bg-[url(./back01.jpg)] bg-cover bg-center items-center text-center p-[60px] rounded-lg shadow-lg gap-[30px]">
+            <div>
+                <h1 class="text-[70px] font-semibold">Building Powerful Digital Products for the Future</h1>
+            </div>
+            <div class="w-full text-center">
+                <p>
+                    We design, develop, and deliver high-performance web & software solutions<br>that drive growth and
+                    innovation.
+                </p>
+            </div>
+            <div class="flex justify-center gap-10 m-[50px]">
+                <button
+                    class="bg-black text-white font-semibold border border-black-500 px-12 py-4 rounded-lg hover:bg-white hover:text-black hover:border-2 hover:border-solid hover:border-black">About
+                    Us</button>
+                <button onclick="openModal()"
+                    class="font-bold border-2 border-solid border-black px-12 py-4 rounded-lg hover:bg-black hover:text-white">Contact
+                    Us</button>
+            </div>
+        </div>
+    </section>
+    <!-- About Us -->
+    <section class="h-auto flex items-center w-full pt-[50px] pb-[50px] justify-center" id="about">
+        <div class="flex gap-10 items-center w-[85%] shadow-lg p-[20px]">
+            <div class="flex flex-col h-full w-[60%] gap-8 p-10">
+                <div>
+                    <p class="text-blue-500 text-xl">About us</p>
+                    <hr class="w-[80px] h-1 bg-blue-500 font-semibold mt-2">
+                </div>
+                <div>
+                    <h1 class="text-[50px] font-semibold">Shaping Careers and Creating Bright Futures</h1>
+                </div>
+                <div>
+                    <p>SS Infotech is a technology-driven company focused on delivering scalable, secure, and
+                        high-performance software solutions. We help startups, enterprises, and growing businesses
+                        transform their ideas into powerful digital products.With expertise in modern web technologies
+                        and enterprise-level backend systems, we ensure
+                        reliability, speed, and long-term scalability.
+                    </p>
+                </div>
+                <div><button onclick="openModal()"
+                        class="bg-black px-14 py-4 text-white text-[18px] rounded-2xl hover:bg-white hover:text-black hover:border-2 hover:border-solid hover:border-black transition">let's
+                        Start</button></div>
+            </div>
+            <div class="w-[50%] object-contain">
+                <img src="./about-us.jpg" alt="" class="h-[400px] w-full rounded-lg">
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us -->
+    <section class="relative bg-[url('./whychoose.jpg')] bg-cover bg-center bg-fixed" ">
+
+        <!-- Black Overlay -->
+        <div class=" absolute inset-0 bg-black/70">
+        </div>
+
+        <!-- Main Container -->
+        <div class="relative max-w-7xl mx-auto px-6 py-24">
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                <!-- LEFT CONTENT -->
+                <div class="text-white space-y-6">
+                    <p class="uppercase tracking-widest text-sm text-gray-300">
+                        Why Choose Us?
+                    </p>
+                    <hr>
+                    <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+                        Delivering Innovation, Security, and Performance Excellence
+                    </h2>
+
+                    <p class="text-gray-300 text-md">
+                        We deliver scalable, secure, and high-performance IT solutions with
+                        transparent communication, timely execution, and client-focused
+                        innovation that drives measurable business growth and long-term success.
+                    </p>
+                </div>
+
+                <!-- RIGHT FEATURE GRID -->
+                <div class="grid sm:grid-cols-2 gap-8">
+
+                    <!-- Card 1 -->
+                    <div class="bg-white p-6 rounded-xl text-center shadow hover:shadow-xl transition">
+                        <div
+                            class="w-14 h-14 flex items-center justify-center border border-black rounded-full mb-4 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">High Performance</h3>
+                        <p class="text-gray-600 text-sm">
+                            Scalable and optimized solutions for modern businesses.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white p-6 rounded-xl text-center shadow hover:shadow-xl transition">
+                        <div
+                            class="w-14 h-14 flex items-center justify-center border border-black rounded-full mb-4 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 11c1.657 0 3-1.343 3-3V7a3 3 0 10-6 0v1c0 1.657 1.343 3 3 3z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 11h14v10H5z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Secure Architecture</h3>
+                        <p class="text-gray-600 text-sm">
+                            Enterprise-level security with robust infrastructure.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white p-6 rounded-xl text-center shadow hover:shadow-xl transition">
+                        <div
+                            class="w-14 h-14 flex items-center justify-center border border-black rounded-full mb-4 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">On-Time Delivery</h3>
+                        <p class="text-gray-600 text-sm">
+                            We ensure timely project completion with quality.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white p-6 rounded-xl text-center shadow hover:shadow-xl transition">
+                        <div
+                            class="w-14 h-14 flex items-center justify-center rounded-full mb-4 mx-auto border border-black">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Client Satisfaction</h3>
+                        <p class="text-gray-600 text-sm">
+                            Continuous improvement driven by feedback and measurable success outcomes.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- SERVICES SECTION -->
+    <section class="py-20 text-black" id="service">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-16">
+                <p class="uppercase tracking-widest text-sm text-blue-500 mb-5 font-semibold">
+                    Services
+                </p>
+                <h2 class="text-4xl font-bold mb-4">Our Professional Services</h2>
+                <p class="text-black max-w-2xl mx-auto">
+                    Delivering innovative IT solutions that empower businesses with scalable, secure and
+                    high-performance digital systems.
+                </p>
+            </div>
+            <div class="flex">
+                <!-- Cards Grid -->
+                <div class="grid gap-6 w-[50%]">
+
+                    <!-- Card 1 -->
+                    <div onclick="openModal('Web Development',
+      'We design and develop responsive, secure and scalable web applications tailored to your business needs using modern frameworks.',
+      './webdev.jpg')"
+                        class="flex gap-8 w-[100%] bg-white/10 backdrop-blur-md border border-black/20 p-6 rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl">
+
+                        <div class="text-2xl text-blue-400">🌐</div>
+                        <h3 class="text-2xl font-semibold">Web Development</h3>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div onclick="openModal('Software Development',
+      'We build powerful business software systems that automate workflows, increase efficiency and improve operational performance.',
+      './soft.jpg')"
+                        class="flex gap-8 w-[95%] bg-white/10 backdrop-blur-md border border-black/20 p-6 rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl">
+
+                        <div class="text-2xl text-indigo-400">💻</div>
+                        <h3 class="text-2xl font-semibold">Software Development</h3>
+
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div onclick="openModal('Digital Marketing',
+                                                'Our digital marketing strategies help businesses improve visibility, generate leads and grow revenue through SEO and online campaigns.',
+                                                 './digital-mar.jpg')"
+                        class="flex gap-8 w-[90%] bg-white/10 backdrop-blur-md border border-black/20 p-6 rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl">
+
+                        <div class="text-2xl text-pink-400">📈</div>
+                        <h3 class="text-2xl font-semibold">Digital Marketing</h3>
+
+                    </div>
+                    <div onclick="openModal('Cloud Solutions',
+      'We provide secure, scalable and high-performance cloud infrastructure solutions including deployment, migration and ongoing maintenance services.',
+      './cloud-soln.jpg')"
+                        class="flex gap-8 w-[85%] bg-white/10 backdrop-blur-md border border-black/20 p-6 rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl">
+
+                        <div class="text-2xl text-purple-400">☁️</div>
+                        <h3 class="text-2xl font-semibold">Cloud Solutions</h3>
+                    </div>
+
+
+                </div>
+                <div class="w-[50%] p-[25px] flex justify-center items-center">
+                    <img src="./services.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MODAL -->
+    <div id="serviceModal"
+        class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 transition-opacity duration-300">
+
+        <div class="bg-white p-10   text-gray-800 w-[95%] md:w-[650px] rounded-2xl overflow-hidden shadow-2xl transform scale-95 transition duration-300"
+            id="modalBox">
+
+            <!-- Close -->
+            <button onclick="closeModal()"
+                class="absolute top-4 right-6 text-2xl font-bold text-gray-600 hover:text-black">
+                ×
+            </button>
+
+            <!-- Image -->
+            <img id="modalImage" src="" class="w-full h-[400px]">
+
+            <!-- Content -->
+            <div class="p-8">
+                <h3 id="modalTitle" class="text-3xl font-bold mb-4"></h3>
+                <p id="modalDescription" class="text-gray-600 leading-relaxed"></p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        function openModal(title, description, image) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDescription').innerText = description;
+            document.getElementById('modalImage').src = image;
+
+            const modal = document.getElementById('serviceModal');
+            const box = document.getElementById('modalBox');
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+
+            setTimeout(() => {
+                box.classList.remove('scale-95');
+                box.classList.add('scale-100');
+            }, 100);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('serviceModal');
+            const box = document.getElementById('modalBox');
+
+            box.classList.remove('scale-100');
+            box.classList.add('scale-95');
+
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 200);
+        }
+    </script>
+
+    <!-- Technology WE use -->
+    <section class="py-20 text-black">
+        <div class="text-center mb-16 max-w-7xl mx-auto">
+            <p class="uppercase tracking-widest text-sm text-blue-500 mb-5 font-semibold">
+                Technology We Use
+            </p>
+            <h2 class="text-5xl font-bold mb-4">Modern Technologies Powering Our Innovative Solutions</h2>
+            <p class="text-black max-w-2xl mx-auto">
+                Our tech stack combines industry-leading tools and frameworks to deliver secure, scalable, and efficient
+                software tailored to your business needs.
+            </p>
+        </div>
+        <div class="grid lg:grid-cols-3 max-w-7xl mx-auto px-6 gap-10">
+            <div class="flex flex-col gap-8">
+                <h3
+                    class="flex gap-8 bg-white/10 backdrop-blur-md border border-black/20 p-6 text-lg font-semibold rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl  hover:bg-black hover:text-white">
+                    Java</h3>
+                <h3
+                    class="flex gap-8  bg-white/10 backdrop-blur-md border border-black/20 p-6 text-lg font-semibold rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl  hover:bg-black hover:text-white">
+                    Spring Boot</h3>
+                <h3
+                    class="flex gap-8  bg-white/10 backdrop-blur-md border border-black/20 p-6 text-lg font-semibold rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl  hover:bg-black hover:text-white">
+                    Spring MVC</h3>
+                <h3
+                    class="flex gap-8  bg-white/10 backdrop-blur-md border border-black/20 p-6 text-lg font-semibold rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl  hover:bg-black hover:text-white">
+                    REST APIs</h3>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <img src="./techuse.jpg" alt="" class="">
+            </div>
+            <div class="flex flex-col gap-8">
+                <h3
+                    class="flex gap-8 bg-white/10 backdrop-blur-md border border-black/20 p-6 text-lg font-semibold rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl  hover:bg-black hover:text-white">
+                    MySQL</h3>
+                <h3
+                    class="flex gap-8 bg-white/10 backdrop-blur-md border border-black/20 p-6 text-lg font-semibold rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl  hover:bg-black hover:text-white">
+                    React</h3>
+                <h3
+                    class="flex gap-8  bg-white/10 backdrop-blur-md border border-black/20 p-6 text-lg font-semibold rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl  hover:bg-black hover:text-white">
+                    JavaScript</h3>
+                <h3
+                    class="flex gap-8  bg-white/10 backdrop-blur-md border border-black/20 p-6 text-lg font-semibold rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl hover:bg-black hover:text-white">
+                    CI/CD Tools</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section class="relative py-20 bg-gray-50 overflow-hidden" id="industries">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+            <div class="flex gap-14">
+                <!-- Industry Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8 w-[50%]">
+
+                    <!-- Card 1 -->
+                    <div
+                        class="group bg-gradient-to-br from-black to-gray-600 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-2">
+
+                        <div class="w-14 h-14 flex items-center justify-center bg-white rounded-xl mb-4 shadow-md">
+                            <!-- Healthcare Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-blue-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v8m4-4H8m12 4.5V7.5A2.5 2.5 0 0017.5 5h-11A2.5 2.5 0 004 7.5v9A2.5 2.5 0 006.5 19h11A2.5 2.5 0 0020 16.5z" />
+                            </svg>
+                        </div>
+
+                        <h3 class="text-xl font-semibold text-white">Healthcare</h3>
+                        <p class="text-white/90 mt-2 text-sm">
+                            Secure and reliable healthcare software solutions for hospitals, clinics, and medical
+                            startups.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="group bg-gradient-to-br from-black to-gray-600 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-2">
+
+                        <div class="w-14 h-14 flex items-center justify-center bg-white rounded-xl mb-4 shadow-md">
+                            <!-- Finance Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-indigo-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 10h18M7 15h1m4 0h1m-6 4h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+
+                        <h3 class="text-xl font-semibold text-white">Finance</h3>
+                        <p class="text-white/90 mt-2 text-sm">
+                            Robust fintech and banking applications with high security and seamless user experience.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="group bg-gradient-to-br from-black to-gray-600 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-2">
+
+                        <div class="w-14 h-14 flex items-center justify-center bg-white rounded-xl mb-4 shadow-md">
+                            <!-- Education Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-green-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l6.16-3.422A12.083 12.083 0 0112 20.944a12.083 12.083 0 01-6.16-10.366L12 14z" />
+                            </svg>
+                        </div>
+
+                        <h3 class="text-xl font-semibold text-white">Education</h3>
+                        <p class="text-white/90 mt-2 text-sm">
+                            E-learning platforms and digital classroom solutions that enhance student engagement.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="group bg-gradient-to-br from-black to-gray-600 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-2">
+
+                        <div class="w-14 h-14 flex items-center justify-center bg-white rounded-xl mb-4 shadow-md">
+                            <!-- E-commerce Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-purple-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4m1.6 8l-1.6 8h14m-9-8v8m4-8v8" />
+                            </svg>
+                        </div>
+
+                        <h3 class="text-xl font-semibold text-white">E-Commerce</h3>
+                        <p class="text-white/90 mt-2 text-sm">
+                            Scalable online store solutions with secure payment integration and smooth checkout
+                            experience.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="w-[50%] flex flex-col justify-center gap-10">
+                    <div class="flex flex-col gap-2 h-[2px] font-bold">
+                        <p class="text-xl font-semibold text-blue-500">Industries We Serve</p>
+                        <hr class="w-[50%] h-[2px]">
+                    </div>
+                    <h2 class="text-6xl">Industries We Empower With Smart Technology</h2>
+                    <p class="text-md">We deliver secure, scalable and innovative IT solutions tailored to
+                        industry-specific challenges,
+                        helping businesses improve operational efficiency, enhance customer experience and achieve
+                        sustainable digital growth.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Contact Us -->
+    <section class="text-black max-w-7xl mx-auto py-20" id="contactus">
+        <div class="flex sm:flex-col ">
+            <div class="w-[40%] flex flex-col gap-10 sm:w-full">
+                <div class="flex flex-col gap-5 ">
+                    <p class="uppercase text-blue-500 font-semibold">Contact US</p>
+                    <h1 class="text-7xl ">Get in Touch <span class="text-blue-500">With Us</span></h1>
+                    <p>Have questions about our products? Our team is ready to assist you with the right solutions.</p>
+                </div>
+                <div class="p-10 pl-0 pt-0">
+                    <form action="" class="flex flex-col gap-5">
+                        <input type="text" name="" id="" placeholder="Enter your Name"
+                            class="p-2 w-2/3 rounded bg-blue-100">
+                        <input type="email" name="" id="" placeholder="Enter your Email"
+                            class="p-2 w-2/3 rounded bg-blue-100">
+                        <textarea name="" id="" cols="10" rows="5" placeholder="Your Comments..."
+                            class="p-2 w-2/3 rounded bg-blue-100"></textarea>
+                        <input type="button" value="Submit"
+                            class="px-2 py-5 bg-black font-bold text-white w-2/3 rounded-lg hover:bg-white hover:text-black hover:border border-black">
+                    </form>
+                </div>
+            </div>
+            <div class="w-[60%] h-auto sm:hidden">
+                <img src="./contactus.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Call TO Action -->
+    <section class="relative my-10 bg-[url(./calltoaction-1.jpg)] bg-cover">
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <div class="relative max-w-7xl mx-auto flex flex-col gap-12 p-10 items-center text-center">
+            <h1 class="text-5xl text-white font-bold">Ready to Transform Your Business with Smart Technology?</h1>
+            <pc class="text-md font-semibold text-white">Discover powerful, scalable digital products built to
+                accelerate growth, improve efficiency, and deliver
+                measurable results.</p>
+                <button onclick="openModal()"
+                    class="px-16 py-3 mt-10 bg-white text-black rounded-xl hover:bg-black hover:text-white hover: border border-white">Contact
+                    Us</button>
+        </div>
+
+    </section>
+
+    <footer class="relative bg-[url(./footer-back.jpg)] bg-cover py-20 flex flex-col items-center">
+        <div class="flex gap-10 max-w-7xl mx-auto sm:flex-col">
+            <div class="w-2/3 flex flex-col gap-10 ">
+                <h2 class="text-3xl font-bold text-black-3 w-[50%]">SSInfoTech</h2>
+                <p class="w-2/3">
+                    SSInfotech is a technology-driven company focused on delivering scalable, secure, and
+                    high-performance software solutions. We help startups, enterprises, and growing businesses transform
+                    their ideas into powerful digital products.
+                </p>
+                <div>
+                    <!-- Social Icons -->
+                    <div class="flex gap-6">
+
+                        <!-- LinkedIn -->
+                        <a href="#" target="_blank" class="text-black hover:text-blue-600 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zm13.5 11.3h-3v-5.6c0-1.3-.5-2.2-1.7-2.2-.9 0-1.4.6-1.6 1.2-.1.2-.1.5-.1.8v5.8h-3v-10h3v1.4c.4-.6 1.1-1.4 2.6-1.4 1.9 0 3.3 1.2 3.3 3.9v6.1z" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="#" target="_blank" class="text-black hover:text-pink-500 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M7 2c-2.8 0-5 2.2-5 5v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5v-10c0-2.8-2.2-5-5-5h-10zm5 15c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm6.5-10.8c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" />
+                                <circle cx="12" cy="12" r="3.5" />
+                            </svg>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="#" target="_blank" class="text-black hover:text-blue-700 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12c0-5.5-4.5-10-10-10s-10 4.5-10 10c0 5 3.7 9.1 8.5 9.9v-7h-2.5v-2.9h2.5v-2.2c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6v1.8h2.9l-.5 2.9h-2.4v7c4.8-.8 8.5-4.9 8.5-9.9z" />
+                            </svg>
+                        </a>
+
+                        <!-- Twitter / X -->
+                        <a href="#" target="_blank" class="text-black hover:text-gray-500 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22.5 2h-3.5l-5 6.5-4.8-6.5h-7.2l8.6 11.6-8.1 10.4h3.5l5.3-6.9 5.2 6.9h7.1l-9-12.1 8.4-9.9z" />
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3">
+                <h3 class="text-lg font-semibold text-black mb-4">Quick Links</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="hover:text-blue-500 transition duration-300">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition duration-300">About Us</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition duration-300">Services</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition duration-300">Industries</a></li>
+                    <li><a href="#" class="hover:text-blue-500 transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="w-1/3">
+                <h3 class="text-lg font-semibold text-black mb-4">Contact Us</h3>
+                <ul class="space-y-4 text-sm">
+
+                    <!-- Email -->
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 12H8m8 0l-4-4m4 4l-4 4m12-8v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6m16-4H4a2 2 0 00-2 2v2h20V6a2 2 0 00-2-2z" />
+                        </svg>
+                        <span>info@ssinfotech.com</span>
+                    </li>
+
+                    <!-- Phone -->
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h2l2 5-3 2a11 11 0 005 5l2-3 5 2v2a2 2 0 01-2 2h-1C8.163 21 3 15.837 3 9V5z" />
+                        </svg>
+                        <span>+91 89992 94108</span>
+                    </li>
+
+                    <!-- Location -->
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Nagpur, Maharashtra, India</span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <hr class="w-full">
+        <!-- CopyRight -->
+        <div class="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-black-500">
+            © 2026 SSInfotech. Design by Sarang Harode. All Rights Reserved.
+        </div>
+
+    </footer>
+
+    <!-- Contact Us Form For POPUP -->
+    <!-- Overlay -->
+    <div id="contactModal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+
+        <!-- Modal Box -->
+        <div class="bg-white w-[90%] max-w-2xl rounded-2xl shadow-xl p-8 relative animate-fadeIn">
+
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-black text-xl">
+                ✕
+            </button>
+
+            <!-- Heading -->
+            <div class="text-center mb-6">
+                <h2 class="text-3xl font-bold">Contact Us</h2>
+                <p class="text-gray-600 mt-2">
+                    Fill out the form and we’ll get back to you soon.
+                </p>
+            </div>
+
+            <!-- Form -->
+            <form class="space-y-5">
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Full Name"
+                        class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black outline-none">
+
+                    <input type="email" placeholder="Email Address"
+                        class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black outline-none">
+                </div>
+
+                <input type="tel" placeholder="Phone Number"
+                    class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black outline-none">
+
+                <textarea rows="4" placeholder="Comments / Message"
+                    class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-black outline-none"></textarea>
+
+                <button type="submit"
+                    class="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+                    Submit Message
+                </button>
+
+            </form>
+        </div>
+    </div>
+    <script>
+        function openModal() {
+            document.getElementById("contactModal").classList.remove("hidden");
+            document.getElementById("contactModal").classList.add("flex");
+        }
+
+        function closeModal() {
+            document.getElementById("contactModal").classList.add("hidden");
+            document.getElementById("contactModal").classList.remove("flex");
+        }
+    </script>
+</body>
+
+</html>

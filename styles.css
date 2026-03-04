@@ -1,0 +1,90 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+/* Background */
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: #dfe8e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Container */
+.popup {
+    width: 1100px;
+    background: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* White Content Card */
+.content {
+    background: white;
+    padding: 60px;
+    width: 65%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    z-index: 2;
+}
+
+/* Small Heading */
+.small-text {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #4d7c8a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Main Heading */
+h1 {
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+/* Description */
+.description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.cta-btn {
+    background: #4bb28f;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #3a9c7c;
+}
+
+/* Image Section */
+.image-section {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    width: 45%;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
