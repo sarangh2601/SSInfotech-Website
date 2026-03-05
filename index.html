@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Tailwind Test</title>
+    <title>SSInfoTech - Empowering Businesses with Smart Digital Solutions </title>
+    <link rel="icon" href="./SSInfoTech-Logo-fevicon.png" type="image/png">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,10 +13,12 @@
 </head>
 
 <body>
-    <nav class="w-full flex justify-between items-center px-6 md:px-[80px] py-[20px] bg-blue-100 sticky top-0 z-50">
+    <nav class="w-full flex justify-between items-center px-6 md:px-[80px] py-[10px] bg-blue-100 sticky top-0 z-50">
 
         <!-- Logo -->
-        <h2 class="text-2xl md:text-3xl font-bold text-black">SSInfoTech</h2>
+        <div class="w-[10%] h-auto">
+            <img src="./SSInfoTech-Logo.png" alt="">
+        </div>
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex justify-between items-center gap-10">
@@ -260,7 +263,7 @@
                 <div class="grid gap-6 w-[50%]">
 
                     <!-- Card 1 -->
-                    <div onclick="openModal('Web Development',
+                    <div onclick="ServiceOpenModal('Web Development',
       'We design and develop responsive, secure and scalable web applications tailored to your business needs using modern frameworks.',
       './webdev.jpg')"
                         class="flex gap-8 w-[100%] bg-white/10 backdrop-blur-md border border-black/20 p-6 rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl">
@@ -270,7 +273,7 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div onclick="openModal('Software Development',
+                    <div onclick="ServiceOpenModal('Software Development',
       'We build powerful business software systems that automate workflows, increase efficiency and improve operational performance.',
       './soft.jpg')"
                         class="flex gap-8 w-[95%] bg-white/10 backdrop-blur-md border border-black/20 p-6 rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl">
@@ -281,7 +284,7 @@
                     </div>
 
                     <!-- Card 3 -->
-                    <div onclick="openModal('Digital Marketing',
+                    <div onclick="ServiceOpenModal('Digital Marketing',
                                                 'Our digital marketing strategies help businesses improve visibility, generate leads and grow revenue through SEO and online campaigns.',
                                                  './digital-mar.jpg')"
                         class="flex gap-8 w-[90%] bg-white/10 backdrop-blur-md border border-black/20 p-6 rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl">
@@ -290,7 +293,7 @@
                         <h3 class="text-2xl font-semibold">Digital Marketing</h3>
 
                     </div>
-                    <div onclick="openModal('Cloud Solutions',
+                    <div onclick="ServiceOpenModal('Cloud Solutions',
       'We provide secure, scalable and high-performance cloud infrastructure solutions including deployment, migration and ongoing maintenance services.',
       './cloud-soln.jpg')"
                         class="flex gap-8 w-[85%] bg-white/10 backdrop-blur-md border border-black/20 p-6 rounded-2xl hover:scale-105 transition duration-300 cursor-pointer shadow-xl">
@@ -317,7 +320,7 @@
             id="modalBox">
 
             <!-- Close -->
-            <button onclick="closeModal()"
+            <button onclick="ServiceCloseModal()"
                 class="absolute top-4 right-6 text-2xl font-bold text-gray-600 hover:text-black">
                 ×
             </button>
@@ -336,7 +339,7 @@
 
 
     <script>
-        function openModal(title, description, image) {
+        function ServiceOpenModal(title, description, image) {
             document.getElementById('modalTitle').innerText = title;
             document.getElementById('modalDescription').innerText = description;
             document.getElementById('modalImage').src = image;
@@ -353,7 +356,7 @@
             }, 100);
         }
 
-        function closeModal() {
+        function ServiceCloseModal() {
             const modal = document.getElementById('serviceModal');
             const box = document.getElementById('modalBox');
 
@@ -523,7 +526,7 @@
 
     <!-- Contact Us -->
     <section class="text-black max-w-7xl mx-auto py-20" id="contactus">
-        <div class="flex">
+        <div class="flex ">
             <div class="w-[40%] flex flex-col gap-10">
                 <div class="flex flex-col gap-5 ">
                     <p class="uppercase text-blue-500 font-semibold">Contact US</p>
@@ -565,10 +568,13 @@
 
     </section>
 
-    <footer class="relative bg-[url(./footer-back.jpg)] bg-cover py-20 flex flex-col items-center">
+    <footer class="relative bg-[url(./footer-back.jpg)] bg-cover py-20 pb-10 flex flex-col items-center">
         <div class="flex gap-10 max-w-7xl mx-auto">
             <div class="w-2/3 flex flex-col gap-10 ">
-                <h2 class="text-3xl font-bold text-black-3 w-[50%]">SSInfoTech</h2>
+                <div class="w-[30%] h-auto">
+                    <img src="./SSInfoTech-Logo.png" alt="">
+                </div>
+
                 <p class="w-2/3">
                     SSInfotech is a technology-driven company focused on delivering scalable, secure, and
                     high-performance software solutions. We help startups, enterprises, and growing businesses transform
