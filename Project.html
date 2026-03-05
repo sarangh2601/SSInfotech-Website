@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projects - SSInfoTech</title>
+    <link rel="icon" href="./SSInfoTech-Logo-fevicon.png" type="image/png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/heroicons@2.0.18/dist/heroicons.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <nav class="w-full flex justify-between items-center px-6 md:px-[80px] py-[10px] bg-blue-100 sticky top-0 z-50">
+
+        <!-- Logo -->
+        <div class="w-[10%] h-auto">
+            <img src="./SSInfoTech-Logo.png" alt="">
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex justify-between items-center gap-10">
+
+            <ul class="flex gap-8 font-semibold">
+
+                <li class="relative group">
+                    <a href="index.html">Home</a>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+                </li>
+
+                <li class="relative group">
+                    <a href="about.html">About</a>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+                </li>
+
+                <li class="relative group">
+                    <a href="Services.html">Services</a>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+                </li>
+
+                <li class="relative group">
+                    <a href="Project.html">Our Projects</a>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+                </li>
+
+                <li class="relative group">
+                    <a href="Contact.html">Contact Us</a>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+                </li>
+
+            </ul>
+
+            <!-- Desktop Button (Hidden on Mobile) -->
+            <button onclick="openModal()"
+                class="hidden md:inline-block bg-black text-white py-2 px-6 rounded-lg hover:bg-white hover:text-black border border-black transition">
+                Get Start
+            </button>
+
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button onclick="toggleMenu()" class="md:hidden text-3xl">
+            ☰
+        </button>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden flex flex-col items-center gap-6 py-6 bg-blue-100 font-semibold">
+
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Services</a>
+        <a href="#industries">Industries</a>
+        <a href="#contactus">Contact Us</a>
+
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
+
+    <Section class="bg-[url(./about-head.jpg)] bg-cover h-[250px] flex flex-col justify-center">
+        <!-- Black Overlay -->
+        <div class="relative flex flex-col justify-center items-left  p-10 m-10 absolute inset-0 bg-black/30">
+            <h1 class="text-7xl font-bold text-gray-100">Our Projects</h1>
+        </div>
+    </Section>
+
+
+    <section class="max-m-7xl mx-auto py-20">
+        <!-- Top Heading -->
+        <div class="text-center mb-16">
+            <p class="uppercase tracking-widest text-sm text-blue-500 mb-5 font-semibold">
+                Our projects
+            </p>
+            <h2 class="text-6xl font-bold mb-4 w-[80%] mx-auto">Transforming Ideas Into Innovative Projects</h2>
+            <p class="text-black max-w-2xl mx-auto">
+                Discover the innovative solutions we’ve developed to help businesses grow through modern technology and
+                scalable digital platforms.
+            </p>
+        </div>
+
+
+        <div class="grid lg:grid-cols-3 gap-10 w-[80%] mx-auto">
+            <div class="shadow-lg rounded-lg overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                    class="h-56 w-full object-cover hover:scale-110 transition duration-500">
+                <div class="flex flex-col gap-6 p-4">
+                    <h3 class="text-xl font-semibold">Sarang Portfolio</h3>
+                    <p>Sarang Portfolio is a personal portfolio website designed to showcase my skills, projects, and
+                        professional experience as a full-stack web developer. It highlights my technical expertise,
+                        completed projects, and contact details for potential clients and employers.</p>
+                </div>
+            </div>
+            <div class="shadow-lg rounded-lg overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                    class="h-56 w-full object-cover hover:scale-110 transition duration-500">
+                <div class="flex flex-col gap-6 p-4">
+                    <h3 class="text-xl font-semibold">KissanMart</h3>
+                    <p>KissanMart is an agriculture-based e-commerce platform that connects farmers directly with
+                        buyers. The platform allows farmers to list and sell their products online, helping them reach a
+                        wider market and get better prices for their produce.</p>
+                </div>
+            </div>
+            <div class="shadow-lg rounded-lg overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                    class="h-56 w-full object-cover hover:scale-110 transition duration-500">
+                <div class="flex flex-col gap-6 p-4">
+                    <h3 class="text-2xl font-semibold">Data Mosaic Tool</h3>
+                    <p>Data Mosaic Tool is a data management and visualization tool that helps organize, analyze, and
+                        present complex datasets in a structured and user-friendly way. It allows users to process large
+                        amounts of data efficiently for better insights and decision-making.</p>
+                </div>
+            </div>
+            <div class="shadow-lg rounded-lg overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                    class="h-56 w-full object-cover hover:scale-110 transition duration-500">
+                <div class="flex flex-col gap-6 p-4">
+                    <h3 class="text-2xl font-semibold">Secure Bank</h3>
+                    <p>Secure Bank is a banking web application that provides secure digital banking services such as
+                        account management, fund transfers, transaction history, and user authentication with enhanced
+                        security features.</p>
+                </div>
+            </div>
+            <div class="shadow-lg rounded-lg overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                    class="h-56 w-full object-cover hover:scale-110 transition duration-500">
+                <div class="flex flex-col gap-6 p-4">
+                    <h3 class="text-2xl font-semibold">TechCon Website</h3>
+                    <p>TechCon Website is a modern event website created for a technology conference. It provides
+                        information about the event schedule, speakers, registration, and venue details in a clean and
+                        responsive design.</p>
+                </div>
+            </div>
+            <div class="shadow-lg rounded-lg overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                    class="h-56 w-full object-cover hover:scale-110 transition duration-500">
+                <div class="flex flex-col gap-6 p-4">
+                    <h3 class="text-2xl font-semibold">SSInfoTech Website</h3>
+                    <P>SSInfoTech Website is a professional company website developed for an IT services company. It
+                        showcases the company’s services, industries served, technologies used, and contact details to
+                        attract potential clients and businesses.</P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Call TO Action -->
+    <section class="relative my-10 bg-[url(./calltoaction-1.jpg)] bg-cover">
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <div class="relative max-w-7xl mx-auto flex flex-col gap-12 p-10 items-center text-center">
+            <h1 class="text-5xl text-white font-bold">Ready to Transform Your Business with Smart Technology?</h1>
+            <pc class="text-md font-semibold text-white">Discover powerful, scalable digital products built to
+                accelerate growth, improve efficiency, and deliver
+                measurable results.</p>
+                <button onclick="openModal()"
+                    class="px-16 py-3 mt-10 bg-white text-black rounded-xl hover:bg-black hover:text-white hover: border border-white">Contact
+                    Us</button>
+        </div>
+
+    </section>
+
+    <footer class="relative bg-[url(./footer-back.jpg)] bg-cover py-20 pb-10 flex flex-col items-center">
+        <div class="flex gap-10 max-w-7xl mx-auto">
+            <div class="w-2/3 flex flex-col gap-10 ">
+                <div class="w-[30%] h-auto">
+                    <img src="./SSInfoTech-Logo.png" alt="">
+                </div>
+
+                <p class="w-2/3">
+                    SSInfotech is a technology-driven company focused on delivering scalable, secure, and
+                    high-performance software solutions. We help startups, enterprises, and growing businesses transform
+                    their ideas into powerful digital products.
+                </p>
+                <div>
+                    <!-- Social Icons -->
+                    <div class="flex gap-6">
+
+                        <!-- LinkedIn -->
+                        <a href="#" target="_blank" class="text-black hover:text-blue-600 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zm13.5 11.3h-3v-5.6c0-1.3-.5-2.2-1.7-2.2-.9 0-1.4.6-1.6 1.2-.1.2-.1.5-.1.8v5.8h-3v-10h3v1.4c.4-.6 1.1-1.4 2.6-1.4 1.9 0 3.3 1.2 3.3 3.9v6.1z" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="#" target="_blank" class="text-black hover:text-pink-500 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M7 2c-2.8 0-5 2.2-5 5v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5v-10c0-2.8-2.2-5-5-5h-10zm5 15c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm6.5-10.8c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z" />
+                                <circle cx="12" cy="12" r="3.5" />
+                            </svg>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="#" target="_blank" class="text-black hover:text-blue-700 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12c0-5.5-4.5-10-10-10s-10 4.5-10 10c0 5 3.7 9.1 8.5 9.9v-7h-2.5v-2.9h2.5v-2.2c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6v1.8h2.9l-.5 2.9h-2.4v7c4.8-.8 8.5-4.9 8.5-9.9z" />
+                            </svg>
+                        </a>
+
+                        <!-- Twitter / X -->
+                        <a href="#" target="_blank" class="text-black hover:text-gray-500 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22.5 2h-3.5l-5 6.5-4.8-6.5h-7.2l8.6 11.6-8.1 10.4h3.5l5.3-6.9 5.2 6.9h7.1l-9-12.1 8.4-9.9z" />
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3">
+                <h3 class="text-lg font-semibold text-black mb-4">Quick Links</h3>
+                <ul class="space-y-3">
+                    <li><a href="index.html" class="hover:text-blue-500 transition duration-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-blue-500 transition duration-300">About Us</a></li>
+                    <li><a href="Services.html" class="hover:text-blue-500 transition duration-300">Services</a></li>
+                    <li><a href="Project.html" class="hover:text-blue-500 transition duration-300">Our Projects</a></li>
+                    <li><a href="Contact.html" class="hover:text-blue-500 transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="w-1/3">
+                <h3 class="text-lg font-semibold text-black mb-4">Contact Us</h3>
+                <ul class="space-y-4 text-sm">
+
+                    <!-- Email -->
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 12H8m8 0l-4-4m4 4l-4 4m12-8v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6m16-4H4a2 2 0 00-2 2v2h20V6a2 2 0 00-2-2z" />
+                        </svg>
+                        <span class="text-lg">info@ssinfotech.com</span>
+                    </li>
+
+                    <!-- Phone -->
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h2l2 5-3 2a11 11 0 005 5l2-3 5 2v2a2 2 0 01-2 2h-1C8.163 21 3 15.837 3 9V5z" />
+                        </svg>
+                        <span class="text-lg">+91 89992 94108</span>
+                    </li>
+
+                    <!-- Location -->
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span class="text-lg">Nagpur, Maharashtra, India</span>
+                    </li>
+
+                </ul>
+                <h3 class="text-lg font-semibold text-black mb-4 pt-[15px]">Our Location</h3>
+                <div class="w-full h-[200px]">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119064.9002762622!2d78.99010820058606!3d21.161225996613556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1772685126088!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </div>
+        <hr class="w-full">
+        <!-- CopyRight -->
+        <div class="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-black-500">
+            © 2026 SSInfotech. Design by Sarang Harode. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
