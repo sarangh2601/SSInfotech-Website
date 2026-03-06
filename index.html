@@ -102,11 +102,11 @@
                     innovation.
                 </p>
             </div>
-            <div class="flex justify-center gap-10 m-[50px]">
-                <button
+            <div class="flex-col md:flex-row lg:flex-row justify-center gap-10 m-[50px]">
+                <button onclick="window.location.href='about.html'"
                     class="bg-black text-white font-semibold border border-black-500 px-12 py-4 rounded-lg hover:bg-white hover:text-black hover:border-2 hover:border-solid hover:border-black">About
                     Us</button>
-                <button onclick="openModal()"
+                <button onclick="window.location.href='Contact.html'"
                     class="font-bold border-2 border-solid border-black px-12 py-4 rounded-lg hover:bg-black hover:text-white">Contact
                     Us</button>
             </div>
@@ -114,7 +114,7 @@
     </section>
     <!-- About Us -->
     <section class="h-auto flex items-center w-full pt-[50px] pb-[50px] justify-center" id="about">
-        <div class="flex gap-10 items-center w-[85%] shadow-lg p-[20px]">
+        <div class="flex fle-col md:flex-row lg:flex-row gap-10 items-center w-[85%] shadow-lg p-[20px]">
             <div class="flex flex-col h-full w-[60%] gap-8 p-10">
                 <div>
                     <p class="text-blue-500 text-xl">About us</p>
@@ -527,13 +527,13 @@
     <!-- Contact Us -->
     <section class="text-black max-w-7xl mx-auto py-20" id="contactus">
         <div class="flex ">
-            <div class="w-[40%] flex flex-col gap-10">
-                <div class="flex flex-col gap-5 ">
+            <div class="w-[50%] flex flex-col gap-10">
+                <div class="flex flex-col gap-5 p-10 pb-0">
                     <p class="uppercase text-blue-500 font-semibold">Contact US</p>
                     <h1 class="text-7xl ">Get in Touch <span class="text-blue-500">With Us</span></h1>
                     <p>Have questions about our products? Our team is ready to assist you with the right solutions.</p>
                 </div>
-                <div class="p-10 pl-0 pt-0">
+                <div class="p-10">
                     <form action="" class="flex flex-col gap-5">
                         <input type="text" name="" id="" placeholder="Enter your Name"
                             class="p-2 w-2/3 rounded bg-blue-100">
@@ -546,7 +546,7 @@
                     </form>
                 </div>
             </div>
-            <div class="w-[60%] h-auto">
+            <div class="w-[60%] h-auto flex flex-col justify-center">
                 <img src="./contactus.jpg" alt="">
             </div>
         </div>
